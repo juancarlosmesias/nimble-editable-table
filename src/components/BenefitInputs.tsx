@@ -32,7 +32,7 @@ const BenefitInputs = ({
           type="number"
           value={porcentaje}
           onChange={handlePorcentajeChange}
-          className="w-full text-sm"
+          className="w-full text-sm bg-white border-gray-300"
           min="0"
           max="100"
           step="0.1"
@@ -48,7 +48,7 @@ const BenefitInputs = ({
             type="number"
             value={monto}
             onChange={handleMontoChange}
-            className="w-full text-sm pl-8"
+            className="w-full text-sm pl-8 bg-white border-gray-300"
             min="0"
             step="0.01"
           />

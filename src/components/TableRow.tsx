@@ -53,7 +53,7 @@ const TableRow = ({ data, onUpdate, onDelete, isLast, index }: TableRowProps) =>
   const hasError = errors.montoRepartir;
 
   return (
-    <tr className={`${rowBgClass} hover:bg-blue-50 transition-colors duration-150 ${hasError ? "bg-red-50" : ""}`}>
+    <tr className={`${rowBgClass} hover:bg-gray-100 transition-colors duration-150 ${hasError ? "bg-red-50" : ""}`}>
       <td className="px-4 py-4">
         <EditableCell
           value={data.periodoInicial}
@@ -121,7 +121,7 @@ const TableRow = ({ data, onUpdate, onDelete, isLast, index }: TableRowProps) =>
           size="sm"
           onClick={() => onDelete(data.id)}
           disabled={isLast}
-          className="bg-red-500 hover:bg-red-600 transition-colors duration-200"
+          className="bg-red-500 hover:bg-red-600 text-white transition-colors duration-200"
         >
           <Trash2 className="w-4 h-4" />
         </Button>

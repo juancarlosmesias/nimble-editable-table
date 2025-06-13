@@ -47,12 +47,12 @@ const EditableCell = ({
   if (type === "select") {
     return (
       <Select value={value.toString()} onValueChange={onUpdate}>
-        <SelectTrigger className={`w-full ${error ? "border-red-500" : ""}`}>
+        <SelectTrigger className={`w-full bg-white border-gray-300 ${error ? "border-red-500" : ""}`}>
           <SelectValue />
         </SelectTrigger>
-        <SelectContent>
+        <SelectContent className="bg-white border-gray-300">
           {options.map((option) => (
-            <SelectItem key={option} value={option}>
+            <SelectItem key={option} value={option} className="hover:bg-gray-100">
               {option}
             </SelectItem>
           ))}
@@ -69,7 +69,7 @@ const EditableCell = ({
         onBlur={handleSave}
         onKeyDown={handleKeyPress}
         type={type}
-        className={`w-full ${error ? "border-red-500" : ""}`}
+        className={`w-full bg-white border-gray-300 ${error ? "border-red-500" : ""}`}
         autoFocus
       />
     );
@@ -79,11 +79,11 @@ const EditableCell = ({
     <div
       onClick={() => setIsEditing(true)}
       className={`px-3 py-2 rounded border cursor-pointer hover:bg-gray-100 transition-colors duration-150 ${
-        error ? "border-red-500 bg-red-50" : "border-gray-300"
+        error ? "border-red-500 bg-red-50" : "border-gray-300 bg-white"
       }`}
     >
       <span className="text-gray-600">{prefix}</span>
-      <span className={error ? "text-red-700" : "text-gray-900"}>
+      <span className={error ? "text-red-700" : "text-black"}>
         {type === "number" ? Number(value).toLocaleString('es-PE') : value}
       </span>
       <span className="text-gray-600">{suffix}</span>

@@ -51,7 +51,7 @@ const RangeInputs = ({
             type="number"
             value={minimoEdit}
             onChange={handleMinimoChange}
-            className="w-full text-sm"
+            className="w-full text-sm bg-white border-gray-300"
             placeholder="Min"
           />
         </div>
@@ -62,7 +62,7 @@ const RangeInputs = ({
               type="text"
               value={maximoEdit}
               onChange={handleMaximoChange}
-              className="flex-1 text-sm"
+              className="flex-1 text-sm bg-white border-gray-300"
               placeholder="Max"
             />
             <Button
@@ -70,7 +70,7 @@ const RangeInputs = ({
               variant="outline"
               size="sm"
               onClick={setInfinite}
-              className="px-2 text-xs"
+              className="px-2 text-xs bg-white border-gray-300 hover:bg-gray-100 text-black"
             >
               ∞
             </Button>

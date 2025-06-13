@@ -71,8 +71,8 @@ const EditableTable = () => {
   };
 
   return (
-    <Card className="w-full shadow-xl border-0 bg-white/80 backdrop-blur-sm">
-      <CardHeader className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-t-lg">
+    <Card className="w-full shadow-lg border border-gray-300 bg-white">
+      <CardHeader className="bg-black text-white">
         <CardTitle className="text-2xl font-bold">
           Configuración de Beneficios y Distribución
         </CardTitle>
@@ -80,30 +80,30 @@ const EditableTable = () => {
       <CardContent className="p-0">
         <div className="overflow-x-auto">
           <table className="w-full">
-            <thead className="bg-gray-50 border-b-2 border-gray-200">
+            <thead className="bg-gray-100 border-b-2 border-gray-300">
               <tr>
-                <th className="px-4 py-4 text-left text-sm font-semibold text-gray-900 min-w-[120px]">
+                <th className="px-4 py-4 text-left text-sm font-semibold text-black min-w-[120px]">
                   Periodo Inicial
                 </th>
-                <th className="px-4 py-4 text-left text-sm font-semibold text-gray-900 min-w-[120px]">
+                <th className="px-4 py-4 text-left text-sm font-semibold text-black min-w-[120px]">
                   Tipo
                 </th>
-                <th className="px-4 py-4 text-left text-sm font-semibold text-gray-900 min-w-[140px]">
+                <th className="px-4 py-4 text-left text-sm font-semibold text-black min-w-[140px]">
                   Precio Referencial
                 </th>
-                <th className="px-4 py-4 text-center text-sm font-semibold text-gray-900 min-w-[200px]">
+                <th className="px-4 py-4 text-center text-sm font-semibold text-black min-w-[200px]">
                   Condición para Entrega
                 </th>
-                <th className="px-4 py-4 text-left text-sm font-semibold text-gray-900 min-w-[140px]">
+                <th className="px-4 py-4 text-left text-sm font-semibold text-black min-w-[140px]">
                   Monto a Repartir
                 </th>
-                <th className="px-4 py-4 text-center text-sm font-semibold text-gray-900 min-w-[180px]">
+                <th className="px-4 py-4 text-center text-sm font-semibold text-black min-w-[180px]">
                   CB - Coleccionables
                 </th>
-                <th className="px-4 py-4 text-center text-sm font-semibold text-gray-900 min-w-[180px]">
+                <th className="px-4 py-4 text-center text-sm font-semibold text-black min-w-[180px]">
                   CB - Suscripciones
                 </th>
-                <th className="px-4 py-4 text-center text-sm font-semibold text-gray-900 w-[80px]">
+                <th className="px-4 py-4 text-center text-sm font-semibold text-black w-[80px]">
                   Acciones
                 </th>
               </tr>
@@ -122,10 +122,10 @@ const EditableTable = () => {
             </tbody>
           </table>
         </div>
-        <div className="p-6 bg-gray-50 border-t">
+        <div className="p-6 bg-gray-100 border-t">
           <Button
             onClick={addNewRow}
-            className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+            className="bg-black hover:bg-gray-800 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
           >
             <Plus className="w-5 h-5 mr-2" />
             Añadir Nueva Fila
